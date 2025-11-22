@@ -1,0 +1,278 @@
+
+html{
+    scroll-behavior: smooth;
+}
+#browse-section{
+    scroll-margin-top: 80px;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a2e; 
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.main-header {
+    background-color: #0f0f1a;
+    padding: 15px 0;
+    border-bottom: 3px solid #ff4d4d;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    color: #ff4d4d;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.btn.primary {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+}
+
+.btn.primary:hover {
+    background-color: #e04444;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background-color: #3b3b54;
+    color: #ccc;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.btn.secondary:hover {
+    background-color: #4a4a6b;
+}
+
+.play.btn{
+    color: #ffffff;
+    
+
+}
+
+.play.btn:hover {
+    background-color: #e90e0e;
+    color: #ccc;
+    
+
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.hero {
+    background: url('assets/demon\ slayer\ \(2\).jpeg') no-repeat center center/cover; 
+    background-color: #2c2c47;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero:hover {
+    background: url('assets/demon\ slayer\ \(2\)-modified.jpeg') no-repeat center center/cover; 
+    background-color: #2c2c47;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.598);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ffe066; 
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+
+.anime-list h3 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    border-left: 5px solid #ff4d4d;
+    padding-left: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.anime-card {
+    background-color: #2c2c47;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.anime-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.anime-card h4 {
+    margin: 15px 0 5px;
+    font-size: 1.2em;
+}
+
+.anime-card p {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+
+.anime-card .btn.secondary {
+    margin-bottom: 15px;
+}
+
+
+.main-footer {
+    background-color: #0f0f1a;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #3b3b54;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+img {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.anime-detail h2
+{   
+     font-size: 2em;
+    margin-bottom: 25px;
+    border-left: 5px solid #ff4d4d;
+    padding-left: 10px;
+
+}
+    
+
+.btn-watch {
+    float: center;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;   
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    transition: 0.5s ease, transform 0.9s ease;
+    text-align: center;
+}
+.btn-watch:hover {
+   background-color: #ccc;
+   color:#ff4d4d;
+   
+   border: 1px solid #ccc;
+
+}
+
+.anime-detail
+{
+    padding : 5px
+}
